@@ -97,6 +97,26 @@ Text-align:center;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.timg_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #006600;
+  visibility: hidden;
+  opacity: 0;
+font-size: 50px;
+Text-align:center;
+ 
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+ 
+.temp:hover .timg_description {
+  visibility: visible;
+  opacity: 1;
+}
 .plants {
     position: relative;
     text-align: center;
@@ -107,6 +127,26 @@ Text-align:center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.pimg_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #006600;
+  visibility: hidden;
+  opacity: 0;
+font-size: 50px;
+Text-align:center;
+ 
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+ 
+.plants:hover .pimg_description {
+  visibility: visible;
+  opacity: 1;
 }
 
 </style>
@@ -142,19 +182,20 @@ Text-align:center;
 <body>
 <div class="animals" id='animals'>
 <img src="http://2.bp.blogspot.com/-oUbEb5ELvxc/UF3naACj8eI/AAAAAAAAANE/mn5qmXiH2I4/s1600/Cockscomb+Basin.jpg">
-<p class="aimg_description">Test</p>
+	<p class="aimg_description">Test</p>
 <div class="acentered">Animals</div>
 
 </div>
 
 <div class="temp" id='temp'>
 <img src="https://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDQnbs2F4kNCWNgbtpe_FvETEyVAEUe9Eg3hQwAk1CATBba_QB1cXidmTU9U34uuQGir7n7_f3qHkNXZUiWJG24W4pZ795rBl2vAJhpJxCeWofRhEZvJFUVAeHkaa6fFtvxuR11TwbVCHhM0TQN9WEjcaNb61Kysjt98332HiHxCyg/" width="1580">
+	<p class="timg_description">Test</p>
 <div class="bcentered">Temperature and Climate</div>
-
 </div>
 
 <div class="plants" id='plants'>
 <img src="http://ak3.picdn.net/shutterstock/videos/3778106/thumb/1.jpg" width="1580">
+	<p class="pimg_description">Test</p>
 <div class="ccentered">Plants</div>
 
 </div>
