@@ -66,6 +66,26 @@ h3{ background-color: #f2f2f2;}
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.aimg_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #006600;
+  visibility: hidden;
+  opacity: 0;
+font-size: 50px;
+Text-align:center;
+ 
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+ 
+.animals:hover .aimg_description {
+  visibility: visible;
+  opacity: 1;
+}
 .temp {
     position: relative;
     text-align: center;
@@ -122,6 +142,7 @@ h3{ background-color: #f2f2f2;}
 <body>
 <div class="animals" id='animals'>
 <img src="http://2.bp.blogspot.com/-oUbEb5ELvxc/UF3naACj8eI/AAAAAAAAANE/mn5qmXiH2I4/s1600/Cockscomb+Basin.jpg">
+<p class="aimg_description">Test</p>
 <div class="acentered">Animals</div>
 
 </div>
