@@ -54,9 +54,11 @@ h3{ background-color: #f2f2f2;}
     transform: translate(-50%, -50%);
 	
 }
+
 .animals {
     position: relative;
     text-align: center;
+}
 
 .acentered {
     position: absolute;
@@ -64,6 +66,12 @@ h3{ background-color: #f2f2f2;}
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.animals:hover {
+  opacity:.5;
+   filter:blur(5px);
+    transition: opacity 2s, visibility 2s;
+}
+ 
 .aimg_description {
   position: absolute;
   top: 0;
@@ -79,11 +87,13 @@ Text-align:left;
   /* transition effect. not necessary */
   transition: opacity 2s, visibility 2s;
 }
- 
+
 .animals:hover .aimg_description {
   visibility: visible;
   opacity: 1;
 }
+
+
 .temp {
     position: relative;
     text-align: center;
@@ -115,6 +125,11 @@ Text-align:left;
   visibility: visible;
   opacity: 1;
 }
+.temp:hover {
+  opacity:.5;
+   filter:blur(5px);
+    transition: opacity 2s, visibility 2s;
+}
 .plants {
     position: relative;
     text-align: center;
@@ -136,16 +151,22 @@ Text-align:left;
   visibility: hidden;
   opacity: 0;
 font-size: 50px;
-Text-align:Left;
+Text-align:left;
  
   /* transition effect. not necessary */
   transition: opacity 2s, visibility 2s;
 }
- 
+ .plants:hover {
+  opacity:.5;
+   filter:blur(5px);
+    transition: opacity 2s, visibility 2s;
+}
+
 .plants:hover .pimg_description {
   visibility: visible;
   opacity: 1;
 }
+
 
 </style>
 <section>	
@@ -178,11 +199,13 @@ Text-align:Left;
 </section>
 <section style="background-color:#000;">
 <body>
+
 <div class="animals" id='animals'>
-<img src="http://2.bp.blogspot.com/-oUbEb5ELvxc/UF3naACj8eI/AAAAAAAAANE/mn5qmXiH2I4/s1600/Cockscomb+Basin.jpg" >
-	<p class="aimg_description">Test</p>
+<img src="http://2.bp.blogspot.com/-oUbEb5ELvxc/UF3naACj8eI/AAAAAAAAANE/mn5qmXiH2I4/s1600/Cockscomb+Basin.jpg">
+<p class="aimg_description">Test</p>
 <div class="acentered">Animals</div>
 </div>
+
 
 <div class="temp" id='temp'>
 <img src="https://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDQnbs2F4kNCWNgbtpe_FvETEyVAEUe9Eg3hQwAk1CATBba_QB1cXidmTU9U34uuQGir7n7_f3qHkNXZUiWJG24W4pZ795rBl2vAJhpJxCeWofRhEZvJFUVAeHkaa6fFtvxuR11TwbVCHhM0TQN9WEjcaNb61Kysjt98332HiHxCyg/" width="1580">
@@ -197,4 +220,5 @@ Text-align:Left;
 
 </div>
 </section>
+
 
