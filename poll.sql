@@ -1,6 +1,8 @@
-CREATE TABLE `poll_main` (
+DROP TABLE `poll_main`;
+
+CREATE TABLE `poll_main` ( 
   `poll_id` int(11) NOT NULL,
-  `poll_question` text NOT NULL
+  `poll_question` text NOT NULL 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `poll_main` (`poll_id`, `poll_question`) VALUES
@@ -13,6 +15,7 @@ ALTER TABLE `poll_main`
 
 
 -- POLL OPTIONS
+DROP TABLE `poll_options`;
 CREATE TABLE `poll_options` (
   `poll_id` int(11) NOT NULL,
   `option_id` int(11) NOT NULL,
@@ -29,6 +32,7 @@ ALTER TABLE `poll_options`
 
 
 -- POLL VOTES
+DROP TABLE `poll_votes`;
 CREATE TABLE `poll_votes` (
   `poll_id` int(11) NOT NULL,
   `option_id` int(11) NOT NULL,

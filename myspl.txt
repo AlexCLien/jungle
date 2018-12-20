@@ -4,7 +4,7 @@ CREATE TABLE `poll_main` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `poll_main` (`poll_id`, `poll_question`) VALUES
-(1, 'How much wood would a woodchuck chuck if a woodchuck could chuck wood?');
+(1, 'Does the jungle need to be saved?');
 
 ALTER TABLE `poll_main`
   ADD PRIMARY KEY (`poll_id`);
@@ -20,9 +20,9 @@ CREATE TABLE `poll_options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `poll_options` (`poll_id`, `option_id`, `option_text`) VALUES
-(1, 1, '300 pounds'),
-(1, 2, '500 pounds'),
-(1, 3, '700 pounds');
+(1, 1, 'Yes'),
+(1, 2, 'No'),
+(1, 3, 'I Don't Care');
 
 ALTER TABLE `poll_options`
   ADD PRIMARY KEY (`poll_id`,`option_id`);

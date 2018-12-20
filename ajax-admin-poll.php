@@ -3,14 +3,6 @@
 require "config.php";
 require "lib-poll.php";
 $pollDB = new Poll();
- 
-// DUMMY USER SESSION
-// REMOVE THIS IN YOUR OWN PROJECT...
-$_SESSION['user'] = [
-    "id" => 999,
-    "name" => "Jonh Doe"
-];
-
 // HANDLE AJAX REQUEST
 switch ($_POST['req']) {
   /* [INVALID REQUEST] */
